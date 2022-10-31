@@ -3,7 +3,7 @@ from ast import Str
 
 def TorreDeHanoi(n, principio, final, intermedio):
     if n == 1:
-        print("Mueve primer disco de", principio, " a ", final)
+        print("Mueve primer disco de", principio, " a ", final) # basecase
     else:
         TorreDeHanoi(n-1, principio, intermedio, final)
         print("Moviendo disco: " + str(n) + " desde: "+ principio + " a " + final)
